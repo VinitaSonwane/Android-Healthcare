@@ -23,7 +23,6 @@ public class Database extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         // Handle database upgrades here if needed
     }
-
     public long register(String username, String email, String password) {
         ContentValues cv = new ContentValues();
         cv.put("Username", username);
@@ -33,9 +32,7 @@ public class Database extends SQLiteOpenHelper {
         long result = db.insert("users", null, cv); // Table name should be "users" not "Users"
         db.close();
         return result;
-    }
-
-    public int login(String username, String password) {
+    }public int login(String username, String password) {
         int result = 0;
         String[] str = {username, password};
         SQLiteDatabase db = getReadableDatabase();
