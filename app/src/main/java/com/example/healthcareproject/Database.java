@@ -17,6 +17,7 @@ public class Database extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String qry1 = "create table users(Username text , email text , password text)";
         sqLiteDatabase.execSQL(qry1);
+
     }
 
     @Override
@@ -34,7 +35,10 @@ public class Database extends SQLiteOpenHelper {
         return result;
     }public int login(String username, String password) {
         int result = 0;
-        String[] str = {username, password};
+        //String[] str1 = {username, password};
+        String str[] = new String[2];
+        str[0] = username;
+        str[1] = password;
         SQLiteDatabase db = getReadableDatabase();
         Cursor c = db.rawQuery("select * from users where Username = ? and password = ?", str); // Table name should be "users" not "user"
         if (c.moveToFirst()) {
