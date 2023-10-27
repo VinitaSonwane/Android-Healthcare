@@ -39,7 +39,7 @@
         app:layout_constraintVertical_bias="0.084" />
 
     <ListView
-        android:id="@+id/listViewDD"
+        android:id="@+id/listViewLT"
         android:layout_width="350dp"
         android:layout_height="500dp"
         android:layout_margin="10dp"
@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="0.3" />
 
     <Button 
-        android:id="@+id/btnDDBack"
+        android:id="@+id/buttonLTBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BACK"
