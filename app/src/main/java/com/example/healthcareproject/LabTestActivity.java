@@ -85,6 +85,7 @@ public class LabTestActivity extends AppCompatActivity {
             item.put("line 5" , " Total Cost:" + packages[i][4]+"/-");
             list.add(item);
         }
+
         sa = new SimpleAdapter(this ,list ,
                 R.layout.multi_lines,
                 new String[] {"line 1" , "line 2" , "line 3" , "line 4" , "line 5"},
