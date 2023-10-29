@@ -67,6 +67,7 @@ public class FindDoctorActivity extends AppCompatActivity {
             }
         });
 
+
         CardView cardiologist = findViewById(R.id.cardFDCardiologist);
         familyphysician.setOnClickListener(new View.OnClickListener() {
             @Override
