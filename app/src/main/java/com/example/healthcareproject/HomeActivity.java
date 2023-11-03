@@ -29,7 +29,6 @@ public class HomeActivity extends AppCompatActivity {
                 editor.clear();
                 editor.apply();
                 startActivity(new Intent(HomeActivity.this,LoginActivity.class));
-
             }
         });
         CardView findDoctor = findViewById(R.id.cardFindDoctor);
@@ -39,7 +38,6 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,FindDoctorActivity.class));
             }
         });
-
         CardView labTest = findViewById(R.id.cardLabTest  );
         labTest.setOnClickListener(new View.OnClickListener() {
             @Override
