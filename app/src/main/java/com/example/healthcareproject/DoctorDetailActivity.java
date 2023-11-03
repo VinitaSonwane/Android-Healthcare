@@ -122,7 +122,7 @@ HashMap<String,String> item;
 
         lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int i , long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i , long l) {
                 Intent it = new Intent(DoctorDetailActivity.this , BookAppointmentActivity.class);
                 it.putExtra("text1",title);
                 it.putExtra("text2",doctor_details[i][0]);

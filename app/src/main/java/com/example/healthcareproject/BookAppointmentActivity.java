@@ -37,6 +37,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         btnBook = findViewById(R.id.buttonBookAppointment);
         btnBack = findViewById(R.id.buttonAppBack);
 
+
         ed1.setKeyListener(null);
         ed2.setKeyListener(null);
         ed3.setKeyListener(null);
