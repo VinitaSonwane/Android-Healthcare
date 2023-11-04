@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/back1"
     tools:context=".LabTestDetailsActivity">
-
     <TextView
         android:id="@+id/textViewDDtitle2"
         android:layout_width="272dp"
